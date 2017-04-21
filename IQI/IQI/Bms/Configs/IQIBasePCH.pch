@@ -1,0 +1,247 @@
+//
+//  IQIBasePCH.pch
+//  IQI
+//
+//  Created by 王玉 on 2017/2/9.
+//  Copyright © 2017年 orbyun. All rights reserved.
+//
+
+#ifndef IQIBasePCH_pch
+#define IQIBasePCH_pch
+
+//导入工具类
+#import "ToolHelper.h"
+//导入frame的分类
+#import "UIView+frame.h"
+//导入扩展类
+#import "NSMutableDictionary+Extent.h"
+//导入适配类
+#import "RMMapper.h"
+//导入刷新类
+#import "MJRefresh.h"
+
+#import "UIImage+ImageWithColor.h"
+
+//字典的扩展方法
+#import "NSMutableDictionary+Set.h"
+#import "NSArray+set.h"
+
+//富文本处理办法
+#import "UIImageView+Tool.h"
+
+ // session 失效跳转
+ #import "UIView+TYAlertView.h"
+ 
+ 
+
+//导入新的WebKit框架
+#import <WebKit/WebKit.h>
+
+//网络框架
+#import "AFNetworking.h"
+//导入弹窗框架
+#import "MBProgressHUD.h"
+//网络请求
+#import "HttpRequest.h"
+
+
+
+
+
+//账号处理类
+
+//自选股处理类
+
+//搜索键盘
+
+
+#import "AppDelegate.h"
+#import "HttpRequest.h"
+
+
+
+
+
+#import <SystemConfiguration/SystemConfiguration.h>
+
+
+
+//获取物理屏幕尺寸
+#define kScreenHeight ([UIScreen mainScreen].bounds.size.height)
+#define kScreenWidth ([UIScreen mainScreen].bounds.size.width)
+#define kScreenBounds ([UIScreen mainScreen].bounds)
+//侧滑距离
+#define kLeftWidth 200
+//系统
+#define iOS7orLater ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+#define iOS8orLater ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+#define iOS9orLater ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0)
+#define iOS10orLater ([[[UIDevice currentDevice] systemVersion] floatValue] >= 10.0)
+//设备设备
+#define isiPhone4 CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size)
+#define isiPhone5 CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size)
+#define isiPhone5S CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size)
+#define isiPhone7 CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size)
+#define isiPhone6 CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size)
+#define isiPhone6Plus CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size)
+#define isiPad CGSizeEqualToSize(CGSizeMake(1024, 768), [[UIScreen mainScreen] currentMode].size)
+#define isiPadPro CGSizeEqualToSize(CGSizeMake(1366, 1024), [[UIScreen mainScreen] currentMode].size)
+
+///** 系统状态栏 */
+// iOS系统版本
+#define SYSTEM_VERSION [[[UIDevice currentDevice] systemVersion] doubleValue]
+// 标准系统状态栏高度
+#define SYS_STATUSBAR_HEIGHT 20
+// 热点栏高度
+#define HOTSPOT_STATUSBAR_HEIGHT 20
+// 导航栏（UINavigationController.UINavigationBar）高度
+#define NAVIGATIONBAR_HEIGHT 44
+// 工具栏（UINavigationController.UIToolbar）高度
+#define TOOLBAR_HEIGHT 44
+// 标签栏（UITabBarController.UITabBar）高度
+#define TABBAR_HEIGHT 44
+// 当前状态栏的高度（可能包含热点栏的高度 和 状态栏的高度） APP_STATUSBAR_HEIGHT=SYS_STATUSBAR_HEIGHT+[HOTSPOT_STATUSBAR_HEIGHT]
+#define APP_STATUSBAR_HEIGHT (CGRectGetHeight([UIApplication sharedApplication].statusBarFrame))
+// 根据APP_STATUSBAR_HEIGHT判断是否存在热点栏
+#define IS_HOTSPOT_CONNECTED (APP_STATUSBAR_HEIGHT==(SYS_STATUSBAR_HEIGHT+HOTSPOT_STATUSBAR_HEIGHT)?YES:NO)
+// 无热点栏时，标准系统状态栏高度+导航栏高度(无热点时，导航栏整体的高度)
+#define NORMAL_STATUS_AND_NAV_BAR_HEIGHT (SYS_STATUSBAR_HEIGHT+NAVIGATIONBAR_HEIGHT)
+// 实时系统状态栏高度+导航栏高度，如有热点栏，其高度包含在APP_STATUSBAR_HEIGHT中。(有热点时，导航栏整体的高度)
+#define STATUS_AND_NAV_BAR_HEIGHT (APP_STATUSBAR_HEIGHT+NAVIGATIONBAR_HEIGHT)
+
+
+//tabbar高度
+#define kTabBarHeight 49.0f
+
+//navigationBar高度
+#define kNavigationHeight 64.0f
+//轻量缓存
+#define defaults [NSUserDefaults standardUserDefaults]
+
+//----------------------图片相关----------------------------
+//读取本地图片
+#define LOADIMAGE(file,ext) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]pathForResource:file ofType:ext]]
+//定义UIImage对象
+#define IMAGE(A) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:A ofType:nil]]
+//定义UIImage对象
+#define ImageNamed(_pointer) [[UIImage imageNamed:_pointer]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]
+//1像素线宽的宏。
+#define KSINGLELINE_WIDTH  1.0f/([UIScreen mainScreen].scale)
+
+#define random_color [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1]
+
+//----------------------颜色相关----------------------------
+
+#define COLOR_Getarc4random_color [ToolHelper getarc4random_color]
+#define COLOR_BLUE [ToolHelper colorWithHexString:@"#368DE7"]
+#define COLOR_GREEN [ToolHelper colorWithHexString:@"#37aa46"]
+#define COLOR_RED [ToolHelper colorWithHexString:@"#e84242"]
+#define COLOR_YELLOW [ToolHelper colorWithHexString:@"#f2ad27"]
+#define COLOR_DARKGREY [ToolHelper colorWithHexString:@"#4c4c4c"]
+#define COLOR_LIGHTGRAY [ToolHelper colorWithHexString:@"#999999"]
+#define COLOR_LINE [ToolHelper colorWithHexString:@"#d1d1d1"]
+#define COLOR_BACK [ToolHelper colorWithHexString:@"#f0f0f0"]
+#define COLOR_TITLE [ToolHelper colorWithHexString:@"#333333"]
+#define COLOR_WHITE [ToolHelper colorWithHexString:@"#ffffff"]//white
+#define COLOR_BLACK [ToolHelper colorWithHexString:@"#4d4d4d"]
+#define COLOR_BLACK1 [ToolHelper colorWithHexString:@"#808080"]
+#define COLOR_BLACK2 [ToolHelper colorWithHexString:@"#555555"]
+#define COLOR_GRY1 [ToolHelper colorWithHexString:@"#444444"]
+
+#define WATER_GRAY_T [UIColor colorWithWhite:0.710 alpha:1.000]
+#define WATER_GRAY_F [UIColor colorWithWhite:0.733 alpha:1.000]
+#define WATER_RED_T [UIColor colorWithRed:0.914 green:0.294 blue:0.302 alpha:1.000]
+#define WATER_RED_F [UIColor colorWithRed:0.929 green:0.345 blue:0.357 alpha:1.000]
+#define WATER_GREEN_T [UIColor colorWithRed:45/255.0 green:194/255.0 blue:55/255.0 alpha:0.8f]
+#define WATER_GREEN_F [UIColor colorWithRed:47/255.0 green:199/255.0 blue:57/255.0 alpha:0.7f]
+
+//---------------------上部TabBar-----------------------------
+#define WATER_GRAY [UIColor colorWithWhite:0.698 alpha:1.000]
+#define WATER_RED [UIColor colorWithRed:0.902 green:0.267 blue:0.278 alpha:1.000]
+#define WATER_GREEN [UIColor colorWithRed:43/255.0 green:191/255.0 blue:53/255.0 alpha:1]
+
+#define APP_DELEGATE_INSTANCE                       ((AppDelegate*)([UIApplication sharedApplication].delegate))
+#define USER_DEFAULT                                [NSUserDefaults standardUserDefaults]
+#define MAIN_STORY_BOARD(Name)                      [UIStoryboard storyboardWithName:Name bundle:nil]
+#define NS_NOTIFICATION_CENTER                      [NSNotificationCenter defaultCenter]
+
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+
+#define IS_OS_5_OR_LATER                            SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"5.0")
+#define IS_OS_6_OR_LATER                            SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"6.0")
+#define IS_OS_7_OR_LATER                            SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")
+#define IS_OS_8_OR_LATER                            SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")
+#define IS_OS_9_OR_LATER                            SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"9.0")
+#define IS_OS_10_OR_LATER                           SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"10.0")
+
+#define IS_WIDESCREEN_5                            (fabs((double)[[UIScreen mainScreen] bounds].size.height - (double)568) < __DBL_EPSILON__)
+#define IS_WIDESCREEN_6                            (fabs((double)[[UIScreen mainScreen] bounds].size.height - (double)667) < __DBL_EPSILON__)
+#define IS_WIDESCREEN_6Plus                        (fabs((double)[[UIScreen mainScreen] bounds].size.height - (double)736) < __DBL_EPSILON__)
+#define IS_IPHONE                                  ([[[UIDevice currentDevice] model] isEqualToString: @"iPhone"] || [[[UIDevice currentDevice] model] isEqualToString: @"iPhone Simulator"])
+#define IS_IPOD                                    ([[[UIDevice currentDevice] model] isEqualToString: @"iPod touch"])
+#define IS_IPHONE_5                                (IS_IPHONE && IS_WIDESCREEN_5)
+#define IS_IPHONE_6                                (IS_IPHONE && IS_WIDESCREEN_6)
+#define IS_IPHONE_6Plus                            (IS_IPHONE && IS_WIDESCREEN_6Plus)
+
+// 表示释放对象，并且将该对象赋值为nil。
+#define TT_RELEASE_SAFELY(__POINTER) { [__POINTER release]; __POINTER = nil; }
+// 停止时间计数器，并且将该计数器赋值为nil
+#define TT_INVALIDATE_TIMER(__TIMER) { [__TIMER invalidate]; __TIMER = nil; }
+// 检测对象是否为nil，如果不为nil释放对象，最后赋值为nil。
+#define TT_RELEASE_CF_SAFELY(__REF) { if (nil != (__REF)) { CFRelease(__REF); __REF = nil; } }
+
+#define DOT_COORDINATE                  0.0f
+#define STATUS_BAR_HEIGHT               20.0f
+#define BAR_ITEM_WIDTH_HEIGHT           30.0f
+#define NAVIGATION_BAR_HEIGHT           40.0f
+#define TAB_TAB_HEIGHT                  49.0f
+#define TABLE_VIEW_ROW_HEIGHT           NAVIGATION_BAR_HEIGHT
+#define CONTENT_VIEW_HEIGHT_NO_TAB_BAR  (kScreenHeight - STATUS_BAR_HEIGHT - NAVIGATION_BAR_HEIGHT)
+#define CONTENT_VIEW_HEIGHT_TAB_BAR     (CONTENT_VIEW_HEIGHT_NO_TAB_BAR - TAB_TAB_HEIGHT)
+
+#define UIColorFromRGB(rgbValue)        [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0f green:((float)((rgbValue & 0xFF00) >> 8))/255.0f blue:((float)(rgbValue & 0xFF))/255.0f alpha:1.0f]
+#define UIColorWithRGBA(r,g,b,a)        [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+
+
+#define IFISNIL(v)                      (v = (v != nil) ? v : @"")
+#define IFISNILFORNUMBER(v)             (v = (v != nil) ? v : [NSNumber numberWithInt:0])
+#define IFISSTR(v)                      (v = ([v isKindOfClass:[NSString class]]) ? v : [NSString stringWithFormat:@"%@",v])
+
+
+#pragma mark - **** Constants ****
+#pragma mark -
+
+#define ARROW_BUTTON_WIDTH              NAVIGATION_BAR_HEIGHT
+#define NAV_TAB_BAR_HEIGHT              ARROW_BUTTON_WIDTH
+#define ITEM_HEIGHT                     NAV_TAB_BAR_HEIGHT
+
+#define NavTabbarColor                  [UIColor whiteColor];
+#define SCNavTabbarBundleName           @"SCNavTabBar.bundle"
+
+#define SCNavTabbarSourceName(file) [SCNavTabbarBundleName stringByAppendingPathComponent:file]
+
+#define uWeakSelf typeof(self) __weak weakSelf = self;
+
+#pragma mark - **** HANGQING-_homeVC ****
+#define Scale kScreenWidth/375
+#define HQCurrentP(page) if (![[[NSUserDefaults standardUserDefaults] objectForKey:@"HQCurrentPage"] isEqualToString: page]) return
+#define EQUA_RATEUPCATEGORY(_homeVC) [_homeVC.title isEqualToString:@"领涨板块"]
+#define EQUA_RATEUPSTOCK(_homeVC) [_homeVC.title isEqualToString:@"领涨股"]
+#define EQUA_RATEDOWNSTOCK(_homeVC) [_homeVC.title isEqualToString:@"领跌股"]
+#define EQUA_FLOWIN(_homeVC) [_homeVC.title isEqualToString:@"资金流入"]
+#define EQUA_FLOWOUT(_homeVC) [_homeVC.title isEqualToString:@"资金流出"]
+#define EQUA_TURNOVER(_homeVC) [_homeVC.title isEqualToString:@"换手率"]
+
+#define JSON_STR(A) [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@[A] options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding]
+#define LARGER(A,B) (A) > (B) ? (A) : (B)
+#define SMALLER(A,B) (A) < (B) ? (A) : (B)
+
+#define kString_Format(fmt, ...) [NSString stringWithFormat:fmt, ##__VA_ARGS__]
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* IQIBasePCH_pch */
