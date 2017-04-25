@@ -13,6 +13,7 @@
 #import "HangQingCollectionTwoCell.h"
 #import "HangQingCollectionThreeCell.h"
 #import "HangQingCollectionReusableView.h"
+#import "MainViewController.h"
 
 
 @interface ViewController ()<UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,UICollectionViewDataSource>
@@ -88,10 +89,15 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.section) {
+        case 0:
+        {MainViewController *aMapView = [[MainViewController alloc]init];
+            [self.navigationController pushViewController:aMapView animated:YES];}
+            break;
         case 1:
         {IQIAMapViewController *aMapView = [[IQIAMapViewController alloc]init];
             [self.navigationController pushViewController:aMapView animated:YES];}
             break;
+        
             
         default:
             break;

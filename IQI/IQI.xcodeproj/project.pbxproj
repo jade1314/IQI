@@ -23,6 +23,15 @@
 		0706910C1EA9B19200920317 /* CEViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0706910B1EA9B19200920317 /* CEViewController.xib */; };
 		070691101EA9B47400920317 /* DKCircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0706910F1EA9B47400920317 /* DKCircleButton.m */; };
 		071F26991E56929300758941 /* AnnotationModelRootClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 071F26981E56929300758941 /* AnnotationModelRootClass.m */; };
+		07697A441EAF2B3E00D096AA /* DisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07697A311EAF2B3E00D096AA /* DisplayViewController.m */; };
+		07697A451EAF2B3E00D096AA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07697A331EAF2B3E00D096AA /* MainViewController.m */; };
+		07697A461EAF2B3E00D096AA /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07697A351EAF2B3E00D096AA /* RecordViewController.m */; };
+		07697A471EAF2B3E00D096AA /* AMapRouteRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 07697A381EAF2B3E00D096AA /* AMapRouteRecord.m */; };
+		07697A481EAF2B3E00D096AA /* FileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 07697A3A1EAF2B3E00D096AA /* FileHelper.m */; };
+		07697A491EAF2B3E00D096AA /* SystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 07697A3C1EAF2B3E00D096AA /* SystemInfo.m */; };
+		07697A4A1EAF2B3E00D096AA /* StatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07697A3F1EAF2B3E00D096AA /* StatusView.m */; };
+		07697A4B1EAF2B3E00D096AA /* SystemInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07697A411EAF2B3E00D096AA /* SystemInfoView.m */; };
+		07697A4C1EAF2B3E00D096AA /* TipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07697A431EAF2B3E00D096AA /* TipView.m */; };
 		076DECA51E5ACAF500431407 /* MANaviRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 076DECA41E5ACAF500431407 /* MANaviRoute.m */; };
 		076DECAC1E5ACB7200431407 /* LineDashPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = 076DECA71E5ACB7200431407 /* LineDashPolyline.m */; };
 		076DECAD1E5ACB7200431407 /* MANaviAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 076DECA91E5ACB7200431407 /* MANaviAnnotation.m */; };
@@ -641,6 +650,24 @@
 		0706910F1EA9B47400920317 /* DKCircleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKCircleButton.m; sourceTree = "<group>"; };
 		071F26971E56929300758941 /* AnnotationModelRootClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationModelRootClass.h; sourceTree = "<group>"; };
 		071F26981E56929300758941 /* AnnotationModelRootClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationModelRootClass.m; sourceTree = "<group>"; };
+		07697A301EAF2B3E00D096AA /* DisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayViewController.h; sourceTree = "<group>"; };
+		07697A311EAF2B3E00D096AA /* DisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayViewController.m; sourceTree = "<group>"; };
+		07697A321EAF2B3E00D096AA /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		07697A331EAF2B3E00D096AA /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		07697A341EAF2B3E00D096AA /* RecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordViewController.h; sourceTree = "<group>"; };
+		07697A351EAF2B3E00D096AA /* RecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
+		07697A371EAF2B3E00D096AA /* AMapRouteRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapRouteRecord.h; sourceTree = "<group>"; };
+		07697A381EAF2B3E00D096AA /* AMapRouteRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMapRouteRecord.m; sourceTree = "<group>"; };
+		07697A391EAF2B3E00D096AA /* FileHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileHelper.h; sourceTree = "<group>"; };
+		07697A3A1EAF2B3E00D096AA /* FileHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileHelper.m; sourceTree = "<group>"; };
+		07697A3B1EAF2B3E00D096AA /* SystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemInfo.h; sourceTree = "<group>"; };
+		07697A3C1EAF2B3E00D096AA /* SystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemInfo.m; sourceTree = "<group>"; };
+		07697A3E1EAF2B3E00D096AA /* StatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusView.h; sourceTree = "<group>"; };
+		07697A3F1EAF2B3E00D096AA /* StatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusView.m; sourceTree = "<group>"; };
+		07697A401EAF2B3E00D096AA /* SystemInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemInfoView.h; sourceTree = "<group>"; };
+		07697A411EAF2B3E00D096AA /* SystemInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemInfoView.m; sourceTree = "<group>"; };
+		07697A421EAF2B3E00D096AA /* TipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipView.h; sourceTree = "<group>"; };
+		07697A431EAF2B3E00D096AA /* TipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipView.m; sourceTree = "<group>"; };
 		076DECA31E5ACAF500431407 /* MANaviRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANaviRoute.h; sourceTree = "<group>"; };
 		076DECA41E5ACAF500431407 /* MANaviRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANaviRoute.m; sourceTree = "<group>"; };
 		076DECA61E5ACB7200431407 /* LineDashPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineDashPolyline.h; sourceTree = "<group>"; };
@@ -1403,6 +1430,55 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		07697A2E1EAF2B3E00D096AA /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				07697A2F1EAF2B3E00D096AA /* AmapController */,
+				07697A361EAF2B3E00D096AA /* AmapModel */,
+				07697A3D1EAF2B3E00D096AA /* AmapView */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		07697A2F1EAF2B3E00D096AA /* AmapController */ = {
+			isa = PBXGroup;
+			children = (
+				07697A301EAF2B3E00D096AA /* DisplayViewController.h */,
+				07697A311EAF2B3E00D096AA /* DisplayViewController.m */,
+				07697A321EAF2B3E00D096AA /* MainViewController.h */,
+				07697A331EAF2B3E00D096AA /* MainViewController.m */,
+				07697A341EAF2B3E00D096AA /* RecordViewController.h */,
+				07697A351EAF2B3E00D096AA /* RecordViewController.m */,
+			);
+			path = AmapController;
+			sourceTree = "<group>";
+		};
+		07697A361EAF2B3E00D096AA /* AmapModel */ = {
+			isa = PBXGroup;
+			children = (
+				07697A371EAF2B3E00D096AA /* AMapRouteRecord.h */,
+				07697A381EAF2B3E00D096AA /* AMapRouteRecord.m */,
+				07697A391EAF2B3E00D096AA /* FileHelper.h */,
+				07697A3A1EAF2B3E00D096AA /* FileHelper.m */,
+				07697A3B1EAF2B3E00D096AA /* SystemInfo.h */,
+				07697A3C1EAF2B3E00D096AA /* SystemInfo.m */,
+			);
+			path = AmapModel;
+			sourceTree = "<group>";
+		};
+		07697A3D1EAF2B3E00D096AA /* AmapView */ = {
+			isa = PBXGroup;
+			children = (
+				07697A3E1EAF2B3E00D096AA /* StatusView.h */,
+				07697A3F1EAF2B3E00D096AA /* StatusView.m */,
+				07697A401EAF2B3E00D096AA /* SystemInfoView.h */,
+				07697A411EAF2B3E00D096AA /* SystemInfoView.m */,
+				07697A421EAF2B3E00D096AA /* TipView.h */,
+				07697A431EAF2B3E00D096AA /* TipView.m */,
+			);
+			path = AmapView;
+			sourceTree = "<group>";
+		};
 		076DECB21E5AD06B00431407 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -1880,6 +1956,7 @@
 		07AAFC071EA8401100F311A9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				07697A2E1EAF2B3E00D096AA /* Map */,
 				07809B4D1EA9A05A005D7870 /* buttons */,
 				07AAFC081EA8401100F311A9 /* BaseViewController.h */,
 				07AAFC091EA8401100F311A9 /* BaseViewController.m */,
@@ -2523,12 +2600,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07038E6D1E4B1A6E00044406 /* Build configuration list for PBXNativeTarget "IQI" */;
 			buildPhases = (
-				F8359BF929E772AE6A3AFCB2 /* 📦 Check Pods Manifest.lock */,
+				F8359BF929E772AE6A3AFCB2 /* [CP] Check Pods Manifest.lock */,
 				07038E4F1E4B1A6E00044406 /* Sources */,
 				07038E501E4B1A6E00044406 /* Frameworks */,
 				07038E511E4B1A6E00044406 /* Resources */,
-				814D1C3F197D2C38388D50D5 /* 📦 Embed Pods Frameworks */,
-				430444C9EA94C25FB2816F37 /* 📦 Copy Pods Resources */,
+				814D1C3F197D2C38388D50D5 /* [CP] Embed Pods Frameworks */,
+				430444C9EA94C25FB2816F37 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2550,7 +2627,8 @@
 				TargetAttributes = {
 					07038E521E4B1A6E00044406 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = PVF2Z9SYW8;
+						DevelopmentTeam = Y4WFRUDV7P;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -3120,14 +3198,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		430444C9EA94C25FB2816F37 /* 📦 Copy Pods Resources */ = {
+		430444C9EA94C25FB2816F37 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3135,14 +3213,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IQI/Pods-IQI-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		814D1C3F197D2C38388D50D5 /* 📦 Embed Pods Frameworks */ = {
+		814D1C3F197D2C38388D50D5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3150,19 +3228,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IQI/Pods-IQI-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F8359BF929E772AE6A3AFCB2 /* 📦 Check Pods Manifest.lock */ = {
+		F8359BF929E772AE6A3AFCB2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -3190,12 +3268,14 @@
 				07DD159D1E4C329000319942 /* TYAlertFadeAnimation.m in Sources */,
 				07DD15D71E4C32B300319942 /* AutoLayoutTool.m in Sources */,
 				070691051EA9B0E300920317 /* CERoundProgressView.m in Sources */,
+				07697A4C1EAF2B3E00D096AA /* TipView.m in Sources */,
 				07DD16141E4C348E00319942 /* HQCollectionReusableView.m in Sources */,
 				07DD15D81E4C32B300319942 /* NSArray+Log.m in Sources */,
 				070691041EA9B0E300920317 /* CERoundProgressLayer.m in Sources */,
 				07AAFE5D1EA852B500F311A9 /* NSMutableArray+addImage.m in Sources */,
 				076DECB11E5ACB9900431407 /* CommonUtility.m in Sources */,
 				07DD159E1E4C329000319942 /* TYAlertScaleFadeAnimation.m in Sources */,
+				07697A481EAF2B3E00D096AA /* FileHelper.m in Sources */,
 				07DD15EE1E4C32CF00319942 /* NSUserDefaults+RMSaveCustomObject.m in Sources */,
 				07DD159A1E4C329000319942 /* TYAlertController+TransitionAnimate.m in Sources */,
 				07AAFC0E1EA8401100F311A9 /* BaseViewController.m in Sources */,
@@ -3205,13 +3285,16 @@
 				07DD15EC1E4C32CF00319942 /* NSObject+RMArchivable.m in Sources */,
 				070691101EA9B47400920317 /* DKCircleButton.m in Sources */,
 				07DD15981E4C329000319942 /* SecurityUtil.m in Sources */,
+				07697A471EAF2B3E00D096AA /* AMapRouteRecord.m in Sources */,
 				07DD15EA1E4C32CF00319942 /* NSMutableDictionary+Set.m in Sources */,
+				07697A491EAF2B3E00D096AA /* SystemInfo.m in Sources */,
 				07DD15A41E4C329000319942 /* NSArray+set.m in Sources */,
 				07DD16181E4C36D600319942 /* GHTreasureLayout.m in Sources */,
 				07809B5E1EA9A05A005D7870 /* ButtonViewController.m in Sources */,
 				07DD159C1E4C329000319942 /* TYAlertDropDownAnimation.m in Sources */,
 				07DD15961E4C329000319942 /* GTMBase64.m in Sources */,
 				07DD131C1E4C0FFD00319942 /* HttpRequest.m in Sources */,
+				07697A441EAF2B3E00D096AA /* DisplayViewController.m in Sources */,
 				07DD15EF1E4C32CF00319942 /* RMMapper.m in Sources */,
 				07770BFE1E4D5F5B00A5FF5E /* IQIAMapViewController.m in Sources */,
 				07DD15A21E4C329000319942 /* UIView+TYAlertView.m in Sources */,
@@ -3223,13 +3306,17 @@
 				07DD16121E4C348E00319942 /* HangQingCollectionTwoCell.m in Sources */,
 				076DECAC1E5ACB7200431407 /* LineDashPolyline.m in Sources */,
 				07AAFC141EA8414B00F311A9 /* TotalViewCell.m in Sources */,
+				07697A4B1EAF2B3E00D096AA /* SystemInfoView.m in Sources */,
 				07AAFC101EA8401100F311A9 /* ViewController.m in Sources */,
+				07697A451EAF2B3E00D096AA /* MainViewController.m in Sources */,
 				07DD15A11E4C329000319942 /* TYShowAlertView.m in Sources */,
 				07DD15991E4C329000319942 /* TimerRefresh.m in Sources */,
 				07DD15D61E4C32B300319942 /* LFCGzipUtillity.m in Sources */,
 				07DD15D91E4C32B300319942 /* CWPLog.m in Sources */,
 				07DD16111E4C348E00319942 /* HangQingCollectionThreeCell.m in Sources */,
+				07697A4A1EAF2B3E00D096AA /* StatusView.m in Sources */,
 				07D3F5441EA9BD7D008F1B49 /* TJLBarButtonMenu.m in Sources */,
+				07697A461EAF2B3E00D096AA /* RecordViewController.m in Sources */,
 				07DD159F1E4C329000319942 /* TYAlertView.m in Sources */,
 				07038E641E4B1A6E00044406 /* IQI.xcdatamodeld in Sources */,
 				07DD15ED1E4C32CF00319942 /* NSObject+RMCopyable.m in Sources */,
@@ -3354,6 +3441,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Y4WFRUDV7P;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/IQI/Bms",
@@ -3362,7 +3450,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/IQI/Bms/Configs/IQIBasePCH.pch";
 				INFOPLIST_FILE = IQI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.orbyun.IQI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.orbyun.IQIJUTU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -3375,6 +3463,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = Y4WFRUDV7P;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/IQI/Bms",
@@ -3383,7 +3472,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/IQI/Bms/Configs/IQIBasePCH.pch";
 				INFOPLIST_FILE = IQI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.orbyun.IQI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.orbyun.IQIJUTU;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
